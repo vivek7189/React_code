@@ -1,0 +1,19 @@
+.testing {
+    width :percentage(5/7);
+}
+
+body {
+    background-color: red;
+    @media screen and (min-width:480px) {
+            background-color:pink;
+    }
+}
+
+$color :red;
+.scoped {
+  $color: white;
+  color: $color;
+}
+.unscoped { 
+    color:$color;
+}
